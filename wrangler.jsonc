@@ -1,21 +1,21 @@
 {
-  // Cấu hình chuẩn cho Cloudflare Pages (coffeet1.pages.dev)
-  "name": "coffeet1",
+  // Cấu hình chuẩn cho Cloudflare Pages (moc-coffee.pages.dev)
+  "name": "moc-coffee",
   "compatibility_date": "2025-02-14",
   "pages_build_output_dir": "./dist",
   // Tích hợp trực tiếp Cloudflare Workers AI (https://dash.cloudflare.com/.../ai/models)
   "ai": {
     "binding": "AI"
   },
-  // Vector Database chuyên dụng Cloudflare Vectorize (thay thế lưu văn bản thuần)
+  // Vector Database Cloudflare Vectorize
   "vectorize": [
     {
       "binding": "VECTORIZE",
-      "index_name": "moc-coffee-vector-index"
+      "index_name": "moc-coffee-vectors"
     }
   ],
   "vars": {
-    "ENVIRONMENT": "development",
+    "ENVIRONMENT": "production",
     "DEFAULT_SHIPPING_FEE": "30000",
     "FREE_SHIPPING_THRESHOLD": "500000",
     "CF_EMBEDDING_MODEL": "@cf/baai/bge-m3",
@@ -32,12 +32,6 @@
     {
       "binding": "KV",
       "id": "7f692b14a6fa44faa10e33657edaf6f3"
-    }
-  ],
-  "vectorize": [
-    {
-      "binding": "VECTORIZE",
-      "index_name": "moc-coffee-vectors"
     }
   ]
 }
