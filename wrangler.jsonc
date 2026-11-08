@@ -25,13 +25,13 @@
     {
       "binding": "DB",
       "database_name": "moc-coffee-db",
-      "database_id": "5f8f3bde-67f5-46f8-94d5-745ea375393b"
+      "database_id": "1adf0f5f-6452-448b-9afc-7f92380e09fd"
     }
   ],
   "kv_namespaces": [
     {
       "binding": "KV",
-      "id": "7f692b14a6fa44faa10e33657edaf6f3"
+      "id": "674007cd1cda427aa65f2b8d1482f5d0"
     }
   ]
 }
